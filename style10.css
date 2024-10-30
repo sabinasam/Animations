@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg,plum,deeppink);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation: moveBox 3s infinite alternate;
+}
+
+@keyframes moveBox {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 300px;
+    }
+}
